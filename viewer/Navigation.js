@@ -93,7 +93,7 @@ this.comicviewer = this.comicviewer||{};
     }
     p.getLinkURL = function()
     {
-        return "/comic-viewer1";
+        return "https://github.com/creamsoda2015/comic-viewer";
     }
     p.displayToggle = function()
     {
