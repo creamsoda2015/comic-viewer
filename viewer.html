@@ -1,0 +1,45 @@
+<script type="text/javascript" src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+<script type="text/javascript" src="./viewer/Utils.js"></script>
+<script type="text/javascript" src="./viewer/Content.js"></script>
+<script type="text/javascript" src="./viewer/PageLoader.js"></script>
+<script type="text/javascript" src="./viewer/PageContainer.js"></script>
+<script type="text/javascript" src="./viewer/PageSlider.js"></script>
+<script type="text/javascript" src="./viewer/PageInfo.js"></script>
+<script type="text/javascript" src="./viewer/Page.js"></script>
+<script type="text/javascript" src="./viewer/LoadingBar.js"></script>
+<script type="text/javascript" src="./viewer/Navigation.js"></script>
+<script type="text/javascript" src="./viewer/Main.js"></script>
+
+<canvas id="viewer_canvas" width="320" height="480" ></canvas>
+
+<script>
+window.onload = function()
+{
+    new comicviewer.Main(
+                                                   "viewer_canvas",            /* canvas id */
+        {
+             "imageHost" :            "./images",           /* image host */
+             "contentId" :                 "1",           /* content id */
+         "nextContentId" :                 "2",      /* next content id */
+              "seriesId" :                 "1",            /* series id */
+              "volumeId" :                 "1",            /* volume id */
+             "episodeId" :                 "1",           /* episode id */
+         "lastEpisodeId" :                "10",      /* last episode id */
+           "seriesTitle" :              "test",         /* series_title */
+          "episodeTitle" :              "test",        /* episode_title */
+               "dirName" :              "hash",             /* dir name */
+             "maxPageOB" :                "40", /* max page (one-based) */
+            "imageWidth" :               "648",          /* image width */
+           "imageHeight" :               "960",         /* image height */
+          "lastPageText" : "this is last page"        /* last page text */
+        }
+    ).init();
+}
+</script>
+
+<div id="debug_log"></div>
+
+
+
+
